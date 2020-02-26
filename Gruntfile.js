@@ -1,11 +1,12 @@
+/*global module:true*/
 module.exports = function(grunt){
   grunt.initConfig({
     eslint:{
       //option是选项的意思
       options:{
-        configFile:'./.eslintrc.json'
+        eslintrc:'./.eslintrc.json'
       },
-      src:['*.js']
+      target:['*.js']
     }
   });
 
