@@ -1,5 +1,6 @@
 #!/usr/bin/node
 /*global process:true*/
+/*global require:true*/
 if(process.argv.length != 4){
   console.log('add x y');
   process.exit(1);

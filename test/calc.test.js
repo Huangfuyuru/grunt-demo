@@ -1,6 +1,9 @@
+//引入要测试的文件和断言库
+/*global describe,it,require:true*/
 const add = require('../calc.js'),
       expect = require('chai').expect;
 
+//测试描述+回调函数
 describe('加法',function(){
   it('0+0=0',function(){
     expect(add(0,0)).to.be.equal(0)
