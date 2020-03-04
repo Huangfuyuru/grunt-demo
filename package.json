@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Huangfuyuru/grunt-demo#readme",
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-spritesmith": "^6.8.0"
+    "grunt": "^1.0.4"
   }
 }
