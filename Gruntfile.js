@@ -1,25 +1,14 @@
 module.exports = function(grunt){
   grunt.initConfig({
-    htmlmin:{
-      options:{
-        removeComments:true,
-        collapseWhitespace:true
-      },
+    imagemin:{
       files:{
-        src:'./index.html',
-        dest:'dest/index.html'
-      } 
-    },
-    cssmin:{
-      'dest/rectangle.min.css':'rectangle.css'
-    },
-    uglify:{
-      'dest/rectangle.min.js':'rectangle.js'
+        expand:true,
+        src:['images/*.{png,jpg,gif}'],
+        dest:'dist/'
+      }
     } 
   });
  
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.registerTask('default',['htmlmin'])
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.registerTask('default',['imagemin'])
 }
